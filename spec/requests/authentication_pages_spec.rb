@@ -41,7 +41,7 @@ describe "AuthenticationPages" do
 
 			describe "followed by sign out" do
 				before { click_link "Sign Out"}
-				it { should have_link('Sign In') }
+				it { should have_link('Sign In', href: signin_path) }
 			end
 		end
 	end
